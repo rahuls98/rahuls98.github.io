@@ -1,0 +1,39 @@
+body {
+    background-image: url('./Images/dominik-dombrowski-KNUp-YBwBSE-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+#logo {
+    max-width: 200px;
+    height: auto;
+}
+
+#disc {
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#avatar {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    transform: translateY(50%)
+}
+
+/* #avatar {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    transform: translate(-100px, -100px);
+} */
