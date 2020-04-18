@@ -1,39 +1,89 @@
-body {
-    background-image: url('./Images/dominik-dombrowski-KNUp-YBwBSE-unsplash.jpg');
+* {
+    /* background-image: url('./Images/dominik-dombrowski-KNUp-YBwBSE-unsplash.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
-
-    font-family: 'Poppins', sans-serif;
-    color: white;
+    background-size: cover; */
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #logo {
-    max-width: 200px;
+    max-width: 150px;
     height: auto;
 }
 
-#disc {
+
+a {
+    font-size: 20px;
+    text-align: right;
+}
+
+/* #disc {
     width: 100%;
     display: inline-block;
     height: 100%;
     text-align: center;
     vertical-align: middle;
-}
+} */
 
-#avatar {
+/* #avatar {
     border-radius: 50%;
     width: 200px;
     height: 200px;
     transform: translateY(50%)
-}
+} */
 
-/* #avatar {
+#avatar {
     position: absolute;
     left: 50%;
     top: 50%;
     border-radius: 50%;
+    border: 5px solid black;
     width: 200px;
     height: 200px;
     transform: translate(-100px, -100px);
-} */
+}
+
+.info {
+    background-color: #f5eded;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 7%;
+    width: 500px;
+    height: 500px;
+    transform: translateY(-250px);
+    z-index: -1; 
+}
+
+.inner {
+    background-color: #f5eded;
+    width: 70%;
+    height: 90%;
+    transform: translateX(33%);
+}
+
+p {
+    background-color: #f5eded;
+    color: black;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 1050px) {
+    div.info {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        border-radius: 7%;
+        width: 450px;
+        height: 550px;
+        transform: translateX(-225px);
+    }
+
+    div.inner {
+        width: 90%;
+        height: 70%;
+        transform: translate(5%, 28%)
+    }
+  }
