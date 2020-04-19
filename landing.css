@@ -1,10 +1,10 @@
 * {
-    /* background-image: url('./Images/dominik-dombrowski-KNUp-YBwBSE-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover; */
     background-color: black;
     font-family: 'Courier New', Courier, monospace;
+}
+
+#particles-js {
+    height: 500px;
 }
 
 #logo {
@@ -12,26 +12,23 @@
     height: auto;
 }
 
+.navbar {
+    padding: 0.8rem;
+}
+
+.navbar-nav li {
+    padding-right: 10px;
+}
 
 a {
     font-size: 20px;
     text-align: right;
+    padding-top: 2px;
 }
 
-/* #disc {
-    width: 100%;
-    display: inline-block;
-    height: 100%;
-    text-align: center;
-    vertical-align: middle;
-} */
-
-/* #avatar {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    transform: translateY(50%)
-} */
+#particles-js {
+    height: 700px;
+}
 
 #avatar {
     position: absolute;
@@ -42,6 +39,7 @@ a {
     width: 200px;
     height: 200px;
     transform: translate(-100px, -100px);
+    z-index: 1;
 }
 
 .info {
@@ -53,37 +51,34 @@ a {
     width: 500px;
     height: 500px;
     transform: translateY(-250px);
-    z-index: -1; 
-}
-
-.inner {
-    background-color: #f5eded;
-    width: 70%;
-    height: 90%;
-    transform: translateX(33%);
+    z-index: 0; 
 }
 
 p {
     background-color: #f5eded;
+    height: 70%;
+    width: 70%;
+    transform: translateX(33%);
     color: black;
     font-size: 18px;
-    padding-top: 20px;
+    padding-top: 8%
 }
 
 @media screen and (max-width: 1050px) {
     div.info {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        border-radius: 7%;
-        width: 400px;
-        height: 550px;
-        transform: translateX(-225px);
+        transform: rotate(90deg);
+        width: 90%;
+        height: auto;
+        margin-left: auto; 
+        margin-right: auto; 
+        margin-bottom: 20px;
+        transform: translateX(-50%)
     }
 
-    div.inner {
-        width: 90%;
-        height: 70%;
-        transform: translate(5%, 28%)
+    p {
+        width: 80%;
+        height: 100%;
+        transform: translateX(15%);
+        padding-top: 120px;
     }
-  }
+}
