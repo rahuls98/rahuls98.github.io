@@ -43,7 +43,9 @@ a {
 }
 
 .info {
-    background-color: #f5eded;
+    /* background-color: #f5eded; */
+    background-color: white;
+    opacity: 0.9;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -55,7 +57,7 @@ a {
 }
 
 p {
-    background-color: #f5eded;
+    background-color: white;
     height: 70%;
     width: 70%;
     transform: translateX(33%);
