@@ -71,7 +71,7 @@ p {
         transform: rotate(90deg);
         width: 90%;
         height: auto;
-        border-radius: 1%;
+        border-radius: 15px;
         margin-left: auto; 
         margin-right: auto; 
         margin-bottom: 20px;
