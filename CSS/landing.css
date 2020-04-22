@@ -63,7 +63,7 @@ p {
     transform: translateX(33%);
     color: black;
     font-size: 18px;
-    padding-top: 8%
+    padding-top: 30px;
 }
 
 @media screen and (max-width: 1050px) {
