@@ -47,14 +47,11 @@ p {
     color: black;
     width: 95%;
     padding-left: 103px;
-    padding-top: 30px;
+    padding-top: 35px;
     font-size: 19px;
     margin-bottom: 0px !important;
 }
 
-.btn {
-    margin-top: 20px;
-}
 
 .footer_content {
     color: white;
@@ -109,5 +106,10 @@ p {
 
     p {
         font-size: 17px;
+    }
+
+    #linkedin {
+        display: block;
+        margin-top: 10px;
     }
 }
