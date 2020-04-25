@@ -108,8 +108,13 @@ p {
         font-size: 17px;
     }
 
-    #linkedin {
+    /* #linkedin {
         display: block;
         margin-top: 10px;
+    } */
+
+    .btn {
+        padding-left: 3px !important;
+        padding-right: 3px !important;
     }
 }
