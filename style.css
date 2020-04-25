@@ -47,9 +47,13 @@ p {
     color: black;
     width: 95%;
     padding-left: 103px;
-    padding-top: 35px;
+    padding-top: 30px;
     font-size: 19px;
     margin-bottom: 0px !important;
+}
+
+.btn {
+    margin-top: 20px;
 }
 
 .footer_content {
@@ -105,9 +109,5 @@ p {
 
     p {
         font-size: 17px;
-    }
-
-    #button-3 {
-        padding-top: 10px;
     }
 }
