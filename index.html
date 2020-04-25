@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Rahul Suresh</title>
-        <link rel="stylesheet" href="./CSS/landing.css">
+        <link rel="stylesheet" href="./CSS/home.css">
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -14,41 +14,29 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-md navbar-dark sticky-top">
-            <div class="container-fluid">
-                <div class="navbar-brand"><img id="logo" src="./Images/SM_White.png"></div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse_target">
-                        Portfolio
-                        <!-- <span class="navbar-toggler-icon"></span> -->
-                </button>
-                <div class="collapse navbar-collapse" id="collapse_target">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="#">Technical</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Music</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./pages/gallery.html">Photography</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div id="particles-js"></div>
-        <div class="container-fluid" id="landing-contents">
+        <div id="particles-js">
+            <img id="logo" src="./Images/SM_White.png">
             <img id="avatar" src="./Images/AvatarBW.png">
-            <div class="info">
-                <p>Computer Science Engineer, Programmer,  
-                        Machine Learning enthusiast, 
-                        Musician, Photographer, Environmentalist. 
-                        That's a brief overview  of myself.
-                    <br><br>Hi, I'm Rahul Suresh. Welcome to my portfolio.
-                    Each section has been designed to showcase my 
-                    journey, work and achievements over the years. Follow the links above 
-                    to explore.
+            <div class="container-fluid" id="info_box">
+                <p> Computer Science Engineer, Programmer,  
+                    ML enthusiast, 
+                    Musician, Audio Engineer, Photographer, Environmentalist. 
+                    That's a brief overview  of myself.
+                    <br><br>Hi, I'm Rahul. 
+                    Welcome to my portfolio, I'm glad you're here.
+                    Take a look at my journey, work and achievements over the years.
                     <br><br>
+                    <a href="./pages/portfolio.html"><button type="link" class="btn btn-outline-info">Portfolio</button></a>
                     <a href="https://github.com/rahuls98"><button type="link" class="btn btn-outline-info">Github</button></a>
-                    <a href="https://linkedin.com/in/rahul-suresh98"><button type="link" class="btn btn-outline-info">Linkedin</button></a>   
+                    <a href="https://linkedin.com/in/rahul-suresh98" id="linkedin"><button type="link" class="btn btn-outline-info">Linkedin</button></a>
                 </p>
             </div>
         </div>
-
+        <footer>
+            <div class="footer_content">
+                © Rahul Suresh<br>reach.rahulsuresh@gmail.com
+            </div>
+        </footer>
         <script>
             particlesJS.load('particles-js', 'assets/particles.json', function() {
                 console.log('callback - particles.js config loaded');
