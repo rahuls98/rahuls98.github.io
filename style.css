@@ -106,4 +106,8 @@ p {
     p {
         font-size: 17px;
     }
+
+    #button-3 {
+        padding-top: 10px;
+    }
 }
