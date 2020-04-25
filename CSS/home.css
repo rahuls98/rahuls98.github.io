@@ -34,12 +34,12 @@
     left: 50%;
     top: 50%;
     width: 500px;
-    height: 480px;
+    height: 420px;
     z-index: 1;
     background: white;
     border-radius: 15px;
     opacity: 0.9;
-    transform: translateY(-240px);
+    transform: translateY(-210px);
 }
 
 p {
@@ -93,28 +93,12 @@ p {
     }
 }
 
-@media screen and (max-width: 786px) {
-    #particles-js {
-        height: 900px;
-    }
-}   
-
 @media screen and (max-width: 576px) {
-    #particles-js {
-        height: 900px;
+    #logo {
+        max-width: 130px;
     }
 
     p {
         font-size: 17px;
-    }
-
-    /* #linkedin {
-        display: block;
-        margin-top: 10px;
-    } */
-
-    .btn {
-        padding-left: 8px !important;
-        padding-right: 8px !important;
     }
 }
