@@ -67,7 +67,7 @@ p {
     #avatar {
         width: 150px;
         height: 150px;
-        top: 40%;
+        top: 30%;
         transform: translate(-75px, -75px);
     }
 
@@ -79,7 +79,7 @@ p {
         margin-left: auto; 
         margin-right: auto; 
         margin-bottom: 20px;
-        top: 40%;
+        top: 30%;
         transform: translateX(-50%)
     }
 
