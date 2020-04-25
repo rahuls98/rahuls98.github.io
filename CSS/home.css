@@ -4,7 +4,7 @@
 }
 
 #particles-js {
-    height: 93vh;
+    height: 100vh;
     z-index: 0;
 }
 
@@ -52,7 +52,6 @@ p {
     margin-bottom: 0px !important;
 }
 
-
 .footer_content {
     color: white;
     opacity: 0.5;
@@ -60,14 +59,10 @@ p {
 }
 
 @media screen and (max-width: 1050px) {
-    #particles-js {
-        height: 800px;
-    }
-    
     #avatar {
         width: 150px;
         height: 150px;
-        top: 30%;
+        top: 40%;
         transform: translate(-75px, -75px);
     }
 
@@ -79,7 +74,7 @@ p {
         margin-left: auto; 
         margin-right: auto; 
         margin-bottom: 20px;
-        top: 30%;
+        top: 40%;
         transform: translateX(-50%)
     }
 
@@ -97,8 +92,17 @@ p {
     #logo {
         max-width: 130px;
     }
-
+    #avatar {
+        top: 30%;
+    }
+    #info_box {
+        top: 30%;
+    }
     p {
-        font-size: 17px;
+        font-size: 18px;
+    }
+    .btn {
+        padding-left: 6px !important;
+        padding-right: 6px !important;
     }
 }
