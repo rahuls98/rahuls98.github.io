@@ -4,8 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Rahul Suresh</title>
-        <link rel="icon" href="./Images/Logo.png">
-        <link rel="stylesheet" href="./CSS/home.css">
+        <link rel="stylesheet" href="../CSS/technical.css">
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -15,26 +14,30 @@
     </head>
 
     <body>
-        <div id="particles-js">
-            <img id="logo" src="./Images/SM_White.png">
-            <img id="avatar" src="./Images/AvatarBW.png">
-            <div class="container-fluid" id="info_box">
-                <p> Programmer, Developer, Tech enthusiast, Musician, 
-                    Audio Engineer, Photographer, Environmentalist. 
-                    That's a brief overview  of myself.
-                    <br><br>Hi, I'm Rahul. I'm a Computer Science Engineer 
-                    from Bangalore, India. Welcome to my 
-                    <a href="./pages/about.html">Portfolio</a>. 
-                    <br><br>
-                    <a href="https://github.com/rahuls98"><button type="link" class="btn btn-outline-primary">Github</button></a>
-                    <a href="https://linkedin.com/in/rahul-suresh98"><button type="link" class="btn btn-outline-primary">Linkedin</button></a>
-                    <a href="mailto:reach.rahulsuresh@gmail.com"><button type="link" class="btn btn-outline-primary">Email</button></a>
-                </p>
+        <div class="container">
+            <!-- <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../Images/Portal_entry.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div> -->
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-lg-4">
+                    <div class="self_card">
+                        <img class="self_card_image" src="../Images/Portal_entry.png" style="width:95%; height:225px; background-position: center; background-size: cover">
+                        <div class="self_card_body">
+                            <p>OpenGL-Portal</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <script>
-            particlesJS.load('particles-js', 'assets/particles.json', function() {
-                console.log('callback - particles.js config loaded');
+            $(document).ready(function(){
+                $("img").click(function(){
+                    $(this).attr("src", "../Images/Portal.gif");
+                });    
             });
         </script>
     </body>

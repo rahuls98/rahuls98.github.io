@@ -1,0 +1,120 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+#logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.navbar {
+    padding: 0.8rem;
+}
+
+.navbar-nav li {
+    padding-right: 10px;
+}
+
+a {
+    font-size: 20px;
+    text-align: right;
+    padding-top: 2px;
+}
+
+.gallery {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.image {
+    transition: transform .3s;
+    width: 100%; 
+    background-size: cover; 
+    background-position: center;
+    border-radius: 5px;
+}
+
+.image:hover {
+    transform: scale(1.03);
+}
+
+.one-col-two-row-2 {
+    margin-top: 20px;
+}
+
+.not-first {
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 991px) {
+    .image {
+        margin: auto;
+        margin-top: 20px;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center !important;
+        width: 500px;
+        max-height: 400px !important;
+    }
+
+    .image.one-row-two-col-1 {
+        margin-top: 20px;
+    }
+
+    .image.one-row-two-col-2 {
+        margin-top: 20px;
+    }
+
+    .image:hover {
+        transform: none;
+    }
+
+    /* .image:active {
+        width: 100vw;
+        height: 100vh;
+        margin-left: 0px;
+        margin-right: 0px;
+        background-repeat: no-repeat;
+        background-size:contain;
+    } */
+
+    .not-first {
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .image {
+        margin: auto;
+        margin-top: 20px;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center !important;
+        width: 300px;
+        max-height: 250px !important;
+    }
+
+    .image.one-row-two-col-1 {
+        margin-top: 20px;
+    }
+
+    .image.one-row-two-col-2 {
+        margin-top: 20px;
+    }
+
+    .image:hover {
+        transform: none;
+    }
+
+    /* .image:active {
+        width: 100vw;
+        height: 100vh;
+        margin-left: 0px;
+        margin-right: 0px;
+        background-repeat: no-repeat;
+        background-size:contain;
+    } */
+
+    .not-first {
+        padding-top: 0px;
+    }
+}
