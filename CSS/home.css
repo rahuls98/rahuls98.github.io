@@ -34,12 +34,12 @@
     left: 50%;
     top: 50%;
     width: 500px;
-    height: 420px;
+    height: 430px;
     z-index: 1;
     background: white;
     border-radius: 15px;
     opacity: 0.9;
-    transform: translateY(-210px);
+    transform: translateY(-215px);
 }
 
 p {
@@ -47,7 +47,7 @@ p {
     color: black;
     width: 95%;
     padding-left: 103px;
-    padding-top: 35px;
+    padding-top: 25px;
     font-size: 19px;
     margin-bottom: 0px !important;
 }
