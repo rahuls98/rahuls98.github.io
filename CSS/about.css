@@ -288,6 +288,12 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+    #avatar {
+        width: 300px !important; 
+        height: 300px !important;
+        /* box-shadow: grey -5px -5px 6px; */
+    }
+
     * {
         font-size: 18px;
     }
