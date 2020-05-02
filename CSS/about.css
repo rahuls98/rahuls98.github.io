@@ -10,7 +10,8 @@
 /*NAVBAR*/
 .navbar {
     height: 70px;
-    z-index: 4;
+    z-index: 3;
+    transition: 0.5s;
 }
 
 /*SIDEBAR*/
@@ -188,7 +189,7 @@ p a:hover {
 
 .story-cards {
     padding: 20px;
-    height: 620px;
+    height: 600px;
     text-align: center;
     background: rgb(20, 20, 20);
     border-radius: 10px;
