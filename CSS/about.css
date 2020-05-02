@@ -1,7 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url(https://fonts.googleapis.com/css?family=Baumans); /*Allerta+Stencil*/
 * {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 22px;
-    background-color: white;
+    font-family: 'Anonymous Pro', monospace; 
+    font-size: 23px;
+    background-color: rgb(10, 10, 10);
+}
+
+h1 {
+    font-family: 'Baumans', monospace; 
+    font-weight: bold;
+    margin-top: 0px;
+    color: #f5eded;
 }
 
 .navbar {
@@ -18,16 +27,19 @@
     z-index: 5;
 }
 
+.content {
+    transition: 0.5s;
+}
+
 .sidebar {
     position: fixed;
     top: 0;
-    right: -250px;
-    background: #0e153a;
-    width: 250px;
+    right: -300px;
+    background: black;
+    width: 300px;
     height: 100%;
     transition: 0.8s;
     padding-top: 50px;
-    background: #0e153a;
     z-index: 4;
 }
 
@@ -38,32 +50,32 @@
 
 .active-tab {
     font-weight: bold;
+    color: white;
 }
 
 ul {
     margin: 0;
     padding: 20px 0;
-    background-color: #0e153a !important;
+    background-color: black !important;
 }
 
 ul li {
     list-style: none;
-    background-color: #0e153a !important;
+    background-color: black !important;
 }
 
 ul li a {
-    padding-top: 18px;
+    padding-top: 20px;
     padding-right: 20px;
-    color: #fff;
+    color: #f5eded;
     display: block;
-    font-size: 20px;
     text-decoration: none;
     text-align: right;
 }
 
 ul li a:hover {
     text-decoration: none;
-    color: white;
+    color: rgb(216, 212, 212);
     transform: scale(1.05);
     transition: 0.5s;
 }
@@ -138,18 +150,22 @@ ul li a:hover {
   }
 
 section {
-    height: 100vh;
+    height: 700px;
+    padding-top: 20px; 
+}
+
+.section1 {
     padding-top: 100px;
 }
 
-h2 {
-    padding-top: 10px;
-    color: #0e153a;
+p {
+    color: white;
+    letter-spacing: 1px;
 }
 
 p a {
     font-weight: bold;
-    color: #0e153a;
+    color: #ff304f;
 }
 
 p a:hover {
@@ -157,31 +173,62 @@ p a:hover {
     color: #ff304f;
 }
 
-img {
-    width: 500px; 
-    height: 500px; 
-    border-radius: 5px; 
-    box-shadow: grey -5px -5px 8px;
+#avatar {
+    width: 300px; 
+    height: 300px; 
+    border-radius: 5px; /* 
+    box-shadow: rgb(102, 102, 102) -5px -5px 8px; */
     transition: 0.5s;
 }
-img:hover {
-    transform: scale(1.03);
-    box-shadow: grey -10px -10px 12px;
+#avatar:hover {
+    transform: scale(1.03);/* 
+    box-shadow: rgb(102, 102, 102) -10px -10px 12px; */
     transition: 0.5s;
 }
 
+.story-cards {
+    padding: 20px;
+    height: 620px;
+    text-align: center;
+    background: rgb(20, 20, 20);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.story-cards:hover {
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.story-cards p {
+    padding-top: 20px;
+    background-color: inherit;
+    font-size: 22px;
+}
+
 @media screen and (max-width: 1200px) {
+    #avatar {
+        width: 250px !important; 
+        height: 250px !important;
+    }
+
     img {
-        width: 400px !important; 
-        height: 400px !important;
+        width: 200px;
+        height: 200px;
+    }
+
+    .story-cards {
+        height: 550px;
     }
 }
 
 @media screen and (max-width: 992px) {
-
-    * {
-        font-size: 17px;
-    }
 
     #logo {
         max-width: 130px;
@@ -189,26 +236,35 @@ img:hover {
 
     .active {
         width: 200px;
-        background: #0e153a;
+        background: black;
     }
 
     .img-column {
         text-align: center;
     }
 
-    img {
+    #avatar {
         width: 400px !important; 
         height: 400px !important;
-        box-shadow: grey -5px -5px 6px;
+        /* box-shadow: grey -5px -5px 6px; */
     }
 
-    img:hover {
+    #avatar:hover {
         transform: none;
-        box-shadow: grey -5px -5px 6px;
+        /* box-shadow: grey -5px -5px 6px; */
         transition: none;
     }
 
-    h2 {
+    img {
+        width: 300px !important; 
+        height: 300px !important;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    h1 {
         text-align: center;
     }
 
@@ -220,11 +276,19 @@ img:hover {
         height: auto;
         padding-top: 50px;
     }
+
+    .story-cards {
+        margin-top: 20px;
+        height: auto;
+    }
+
+    .story-cards:hover {
+        transform: none;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    img {
-        width: 300px !important; 
-        height: 300px !important;
+    * {
+        font-size: 18px;
     }
 }

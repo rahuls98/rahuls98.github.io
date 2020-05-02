@@ -31,43 +31,60 @@
 
         <div class="content">
             <div class="container">
-                <section>
+                <section class="section1">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 img-column">
-                            <img src="../Images/AvatarCOLOR.png">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 img-column">
+                            <img id="avatar" src="../Images/AvatarCOLOR.png">
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 column2">
-                            <h2>About Me</h2>
-                            <hr>
-                            <p>Hello there! I'm Rahul, a Software Engineer based in Bangalore, KA. 
-                            <br><br>I enjoy exploring new technology, 
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 column2">
+                            <p style="margin-bottom: 5px;">Hello there! My name is
+                            <h1 id="name">RAHUL SURESH</h1> 
+                            <hr style="background-color: whitesmoke; opacity: 0.8">
+                            <p>I'm a Software Engineer based in Bangalore, KA.
+                            I enjoy exploring new technology, 
                             developing innovative products and applications, 
                             producing music,
                             scoring films,  
                             and drinking coffee &#9749;
-                            
-                            <br><br>I graduated from <a href="https://pesitsouth.pes.edu/">PES</a> in 2020, 
-                            with a BE degree in Computer Science and Engineering. Here's my <a href="#">resume</a>.
                             </p>
+                            <!-- <br><br> -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <br><br>
+                            <p>I graduated from <a href="https://pesitsouth.pes.edu/">PES</a> in 2020, 
+                                with a BE degree in Computer Science and Engineering. Here's my professional </a><a href="../assets/Resume.pdf" target="_blank">resume</a>.
+                            </p>   
                         </div>
                     </div>
                 </section>
 
                 <section>
                     <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 img-column">
-                            <img src="../Images/Work.png">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 card-column">
+                            <div class="story-cards">
+                                <img src="../Images/Work.png">
+                                <p>I love developing solutions for real world problems.
+                                    Researching existing issues and ideating solutions for the same has always been
+                                    my strong point &#129488;</p>
+                            </div>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 column2">
-                            <p>I love developing solutions for real world problems.
-                            Researching existing issues and ideating solutions for the same has always been
-                            my strong point &#129488; 
-                            <br><br>Apart from this, I also like to do work that is an intersection
-                            of my technical knowledge and my other interests such as music, audio analysis, animation, etc.
-                            <br><br>All this is portrayed in my <a href="#">technical portfolio</a>, 
-                            where the type of projects range from smart farming techniques using IoT, to tools for 
-                            online music production. 
-                            </p>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 card-column">
+                            <div class="story-cards">
+                                <img src="../Images/Music.png">
+                                <p>Something here ...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 card-column">
+                            <div class="story-cards">
+                                <img src="../Images/Photography.png">
+                                <p>The title of 'explorer' fits me better than 'photographer'. 
+                                    I just happen to be carrying a camera 
+                                    in the right place - at the right time &#128247;
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -78,7 +95,13 @@
             $(document).ready(function(){
                 $(".sidebarBtn").click(function(){
                     $('.sidebar').toggleClass("active");
-                    $('.sidebarBtn').toggleClass('toggle')
+                    $('.sidebarBtn').toggleClass('toggle');
+                    if($(".content").css("opacity") == '1') {
+                        $(".content").css("opacity", "0.8")
+                    }
+                    else {
+                        $(".content").css("opacity", "1")
+                    }
                 })
             })
         </script>
