@@ -11,6 +11,7 @@
         
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
@@ -25,6 +26,12 @@
                     <li><a href="#">Music</a></li>
                     <li><a href="#">Photography</a></li>
                 </ul>
+
+                <div class="quick_links">
+                    <a href="https://github.com/rahuls98"><i class="fa fa-github" style="font-size: 34px;"></i></a>
+                    <a href="https://linkedin.com/in/rahul-suresh98"><i class="fa fa-linkedin" style="font-size: 32px;"></i></a>
+                    <a href="mailto:reach.rahulsuresh@gmail.com"><i class="fa fa-envelope" style="font-size: 30px;"></i></a>
+                </div>
             </div>
         </nav>
 
@@ -32,7 +39,7 @@
             <div class="container">
                 <!-- INTRODUCTION -->
                 <section class="section1">
-                    <h2>About Me</h2>
+                    <h2>About me</h2>
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 img-column">
                             <img id="avatar" src="../Images/AvatarCOLOR.png">
@@ -46,7 +53,7 @@
                             exploring new technology, 
                             producing music,
                             scoring films,  
-                            and drinking coffee &#9749;
+                            and drinking coffee. &#9749;
                             </p>
                         </div>
                     </div>
@@ -54,9 +61,9 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <p>I graduated from <a href="https://pesitsouth.pes.edu/">PES</a> in 2020, 
-                                with a BE degree in Computer Science and Engineering. Here's my professional </a><a href="../assets/Resume.pdf" target="_blank">resume</a>.
-                                I'm also a self taught (and still learning) Music Composer and Audio Engineer. No degree to back
-                                that up though, I just use the internet to my advantage &#128517;
+                                with a BE degree in Computer Science and Engineering. &#127891; Here's my professional </a><a href="../assets/Resume.pdf" target="_blank">resume</a>.
+                                <br>I'm also a self taught (and still learning) Music Composer and Audio Engineer. No degree to back that up though; 
+                                just my work and experience so far.
                             </p>   
                         </div>
                     </div>
@@ -64,23 +71,24 @@
                 <br><br><br>
                 <!-- STORY CARDS -->
                 <section class="section2">
-                    <h2>My Work</h2>
+                    <h2>InShorts</h2>
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 card-column">
                             <div class="story-cards">
                                 <img src="../Images/Work.png">
                                 <p>I crave innovation. Researching existing problems and ideating solutions 
                                     for them is a strength of mine. 
-                                    <br>&#129488;
-                                    <br>This is portrayed in my <a href="#">Technical Portfolio</a></p>
+                                    <br><br>&#128421;
+                                    <br><!-- This is portrayed in my  --><a href="#">Technical Portfolio</a></p>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 card-column">
                             <div class="story-cards">
                                 <img src="../Images/Music.png">
-                                <p>Hans Christian Andersen once said, “where words fail, music speaks".
-                                    <br>&#127929;
-                                    <br>You'll find my work in my <a href="#">Music Portfolio</a>  
+                                <p>“Where words fail, music speaks".
+                                    <br> - <span id="quote">Hans Christian Andersen</span>
+                                    <br><br>&#127929;
+                                    <br><!-- You'll find my work in my  --><a href="#">Music Portfolio</a>  
                                 </p>
                             </div>
                         </div>
@@ -90,8 +98,8 @@
                                 <p>I don't call myself a 'photographer'. 
                                     I just happen to be carrying a camera 
                                     in the right place - at the right time 
-                                    <br>&#128247;
-                                    <br>Nevertheless, here's my <a href="#">Photography Portfolio</a>
+                                    <br><br>&#128247;
+                                    <br><!-- Nevertheless, here's my  --><a href="#">Photography Portfolio</a>
                                 </p>
                             </div>
                         </div>
@@ -106,13 +114,15 @@
                     $('.sidebar').toggleClass("active");
                     $('.sidebarBtn').toggleClass('toggle');
                     if($(".content").css("opacity") == '1') {
-                        $(".content").css("opacity", "0.9")
+                        $(".content").css("opacity", "0.9");
                     }
                     else {
-                        $(".content").css("opacity", "1")
+                        $(".content").css("opacity", "1");
                     }
                 })
             })
         </script>
     </body>
+
+    
 </html>
