@@ -24,8 +24,8 @@
                 <ul>
                     <li><a href="../about/">About</a></li>
                     <li><a href="../technical/">Technical</a></li>
-                    <li><a href="../music/">Music</a></li>
-                    <li><a class="active-tab" href="#">Photography</a></li>
+                    <li><a class="active-tab" href="../music/">Music</a></li>
+                    <li><a href="../gallery/">Photography</a></li>
                 </ul>
             </div>
         </nav>
@@ -38,5 +38,20 @@
                 </section>
             </div>
         </div>
+
+        <script>
+            $(document).ready(function(){
+                $(".sidebarBtn").click(function(){
+                    $('.sidebar').toggleClass("active");
+                    $('.sidebarBtn').toggleClass('toggle');
+                    if($(".content").css("opacity") == '1') {
+                        $(".content").css("opacity", "0.9");
+                    }
+                    else {
+                        $(".content").css("opacity", "1");
+                    }
+                })
+            })
+        </script>
     </body>
 </html>    
