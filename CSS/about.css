@@ -145,7 +145,7 @@ ul li a:hover {
 
 /*CONTENT*/
 .content {
-    transition: 0.5s;
+    transition: 0.8s;
 }
 
 .section1 {
@@ -236,12 +236,23 @@ p a:hover {
 
 .story-cards {
     padding: 20px 20px 0 20px;
+    position: relative;
     height: 100%;
     text-align: center;
     background: rgb(20, 20, 20);
     border-radius: 10px;
     transition: 0.5s;/* 
     margin-bottom: 50px; */
+}
+
+.story-bottom {
+    background: rgb(20, 20, 20);
+    position: absolute;
+    width: 90%;
+    padding-bottom: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .story-cards:hover {
@@ -267,8 +278,16 @@ img {
     font-size: 20px;
 }
 
-.story-cards p a {
+.story-bottom a {
     font-size: 20px;
+    font-weight: bold;
+    color: #ff304f;
+}
+
+.story-bottom a:hover {
+    font-size: 20px;
+    text-decoration: underline(#ff304f);
+    color: #ff304f;
 }
 
 /*MEDIUM 2 COLUMN LAYOUT*/
