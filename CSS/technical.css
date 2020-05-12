@@ -50,7 +50,6 @@ ul li a {
 ul li a:hover {
     text-decoration: none;
     color: #ff304f;
-    transform: scale(1.05);
     transition: 0.3s;
 }
 
