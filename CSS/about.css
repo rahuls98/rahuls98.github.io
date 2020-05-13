@@ -7,6 +7,21 @@
     background-color: rgb(10, 10, 10);
 }
 
+body {
+    animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+}
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+} 
+
 /*NAVBAR*/
 .navbar {
     height: 70px;
@@ -147,14 +162,13 @@ ul li a:hover {
     transition: 0.8s;
 }
 
-.section1 {
+#section1 {
     height: auto;
-    padding-top: 30px; 
-}
+    padding-top: 5%;
+} 
 
-.section2 {
+#section2 {
     height: auto;
-    /* margin-top: 50px; */
 }
 
 #avatar {
@@ -187,7 +201,7 @@ h2 {
     font-family: 'Baumans', monospace; 
     padding-bottom: 20px;
     font-weight: bold;
-    color: rgb(128, 128, 128);
+    color: rgb(136, 136, 136);
 }
 
 .quick_links {
