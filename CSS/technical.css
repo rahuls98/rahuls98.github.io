@@ -187,7 +187,7 @@ h5 {
     background: rgb(20, 20, 20);
     padding: 10px;
     height: 350px;
-    box-shadow: 2px -2px 5px;
+    box-shadow: black 2px -2px 5px;
     transition: 0.5s;
 }
 

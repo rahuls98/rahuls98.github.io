@@ -174,8 +174,7 @@ ul li a:hover {
 #avatar {
     width: 300px; 
     height: 300px; 
-    border-radius: 5px; /* 
-    box-shadow: rgb(102, 102, 102) -5px -5px 8px; */
+    border-radius: 5px; 
     transition: 0.5s;
 }
 
@@ -254,8 +253,7 @@ p a:hover {
     text-align: center;
     background: rgb(20, 20, 20);
     border-radius: 10px;
-    transition: 0.5s;/* 
-    margin-bottom: 50px; */
+    transition: 0.5s;
 }
 
 .story-bottom {
