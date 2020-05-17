@@ -207,7 +207,7 @@ h5 {
 .project-btn {
     float: right;
     padding-left: 15px;
-    font-size: 23px;
+    font-size: 24px;
 }
 
 .project-btn i {
@@ -218,6 +218,12 @@ h5 {
 .project-btn i:hover {
     color: #ff304f;
     cursor: pointer;
+}
+
+hr {
+    margin: 0px 0px 5px 0px !important;
+    background: rgb(180, 180, 180);
+    opacity: 0.2;
 }
 
 .modal-content {
