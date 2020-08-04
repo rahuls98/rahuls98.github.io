@@ -168,7 +168,7 @@ hr {
     .sidenav_bar { display: block; }
 
     #main-content {
-        height: 100%;
+        height: auto;
         text-align: center;
     }
     hr { width: 100%; }
