@@ -5,10 +5,12 @@
 }
 
 html { background: #010101; }
+body { visibility: hidden; }
+#loader { visibility: visible; }
 
 #loader { 
     position: absolute;
-    width: 60vw;
+    width: 40vw;
     top: 0; 
     bottom: 0; 
     left: 0; 
@@ -176,6 +178,7 @@ hr {
 
 @media only screen and (max-width: 1199px) {
     * { font-size: 1.1rem; }
+    #loader { width: 100vw; }
     #line-1,#line-2,#line-3,#line-4 { display: none; }
     .sidenav_bar { display: block; }
 
