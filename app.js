@@ -1,3 +1,12 @@
+document.querySelector("body").style.visibility = "hidden"; 
+document.querySelector("#loader").style.visibility = "visible"; 
+var img = new Image();
+img.onload = function() {
+    document.querySelector("#loader").style.display = "none"; 
+    document.querySelector("body").style.visibility = "visible";
+};
+img.src = "./assets/images/Avatar.png";
+
 var sidenav_toggle = document.getElementById("sidenav_toggle");
 var sidenav_close = document.getElementById("sidenav_close");
 var sidenav = document.getElementById("sidenav");

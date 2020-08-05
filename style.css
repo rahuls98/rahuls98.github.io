@@ -4,6 +4,18 @@
     color: white;
 }
 
+html { background: #010101; }
+
+#loader { 
+    position: absolute;
+    width: 60vw;
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    margin: auto;
+}
+
 #line-1 {
     position: absolute;
     top: 0.5em;
