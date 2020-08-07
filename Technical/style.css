@@ -10,7 +10,8 @@
     height: 100vh; 
 }
 
-#section-1 { height: 15%; }
+#section-1 { height: 25%; }
+#section-2 { height: 65%; text-align: center; }
 
 /* PAGINATION */
 .nav_items a{
