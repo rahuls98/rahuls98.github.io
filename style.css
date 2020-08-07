@@ -1,11 +1,14 @@
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5vw;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.6vw;
     color: white;
 }
 
 html { background: #010101; }
-body { visibility: hidden; }
+body { 
+    visibility: hidden; 
+}
 #loader { visibility: visible; }
 
 #loader { 
@@ -65,8 +68,8 @@ body { visibility: hidden; }
     height: 100vh; 
 }
 
-#section-1 { height: 25%; }
-#section-2 { height: 65%; }
+#section-1 { height: 22%; }
+#section-2 { height: 68%; }
 #section-3 { height: 10%; }
 
 /* PAGINATION */
@@ -148,7 +151,7 @@ body { visibility: hidden; }
     border-radius: 10px;
 }
 
-#info-container { padding: 0 2em 0 5em; }
+#info-container { padding: 0 0 0 5em; }
 
 #name {
     font-family: 'Krona One';
@@ -158,6 +161,29 @@ hr {
     background: white;
     margin: 0;
     width: 90%;
+}
+/* Cursor */
+.txt-type .txt {
+    color: #ff304f;
+}
+  
+.blinking-cursor {
+    color: #ff304f;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+  
+@keyframes blink {
+    from,
+    to {
+      color: #ff304f;
+    }
+    50% {
+      color: transparent;
+    }
 }
 
 /* LINK TAB */
@@ -183,16 +209,17 @@ hr {
     .sidenav_bar { display: block; }
 
     #main-content {
-        height: auto;
+        height: 100%;
         text-align: center;
     }
     hr { width: 100%; }
 
-    #section-1, #section-3 { display: none; }
+    #section-1 { display: none; }
     #section-2 {
-        height: auto;
+        height: 80%;
         text-align: center;
     }
+    #section-3 { height: auto; }
 
     .photo-container {
         width: 55vw;
@@ -200,4 +227,17 @@ hr {
     }
     #info-container { padding: 5vh 8vw 5vh 8vw; }
     #name { font-size: 1.4rem; }
+
+    .link_tab {
+        height: 100%;
+        padding-left: 0;
+        padding-bottom: 5vh;
+    }
+    .link_tab a i {
+        font-size: 1.2em;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        color: #ff304f;
+        transition: 0.5s;
+    }
 }
